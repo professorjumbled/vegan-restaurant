@@ -64,6 +64,7 @@ function Footer() {
                     scrolling="no"
                     marginheight="0"
                     marginwidth="0"
+                    title="A map showing the location of the restaurant"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=-0.17140388488769534%2C51.5146802004776%2C-0.1422214508056641%2C51.52976705673023&amp;layer=mapnik&amp;marker=51.52222425338158%2C-0.1568126678466797"
                 ></iframe>
                 <a href="https://www.openstreetmap.org/?mlat=51.5222&amp;mlon=-0.1568#map=15/51.5222/-0.1568">

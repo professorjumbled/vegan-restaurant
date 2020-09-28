@@ -1,65 +1,73 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "./index.module.css";
+import { Menu, Header, Footer } from "../components";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+function Home() {
+    return (
+        <main>
+            <Head>
+                <title>Fictional Vegan Restaurant</title>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Open+Sans&display=swap"
+                    rel="stylesheet"
+                />
+                <meta
+                    name="description"
+                    content="A fictional vegan breakfast restaurant website built by David Lozano for his portfolio."
+                />
+                <meta name="robots" content="index, nofollow" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <meta charset="UTF-8" />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+                <meta
+                    property="og:title"
+                    content="Fictional Vegan Restaurant"
+                />
+                <meta
+                    property="og:description"
+                    content="A fictional vegan breakfast restaurant website built by David Lozano for his portfolio."
+                />
+                <meta
+                    property="og:image"
+                    content="https://source.unsplash.com/HlNcigvUi4Q"
+                />
+                <meta
+                    property="og:url"
+                    content="https://vegan-restaurant.davidlozano.me"
+                />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                    property="og:site_name"
+                    content="Fictional Vegan Restaurant"
+                />
+                <meta
+                    name="twitter:image:alt"
+                    content="Vegan food and dishes"
+                />
+            </Head>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <Header />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+            <div className={`${styles.body} ${styles.deliver}`}>
+                <h2>We Now Deliver!</h2>
+                <p>
+                    Stuck at home? We can deliver to your home anywhere in the
+                    world!
+                </p>
+                <p>
+                    Just give us a call at 0118 999 881 999 119 7253 and you can
+                    start eating your breakfast within 30 minutes.
+                </p>
+            </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <Menu />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+            <Footer />
+        </main>
+    );
 }
+
+export default Home;

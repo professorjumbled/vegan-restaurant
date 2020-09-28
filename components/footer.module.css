@@ -1,0 +1,30 @@
+.siteFooter {
+    background-color: #2b2d42;
+    min-height: 15vh;
+    color: #edf2f4;
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+
+.about,
+.location {
+    width: 100%;
+}
+
+.iframe {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 800px) {
+    .siteFooter {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about,
+    .location {
+        width: calc(50% - 10px);
+    }
+}
